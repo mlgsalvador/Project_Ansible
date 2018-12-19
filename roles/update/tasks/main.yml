@@ -1,0 +1,9 @@
+- name: Update all packages
+  yum:
+    name: '*'
+    state: latest
+  register: pkg
+
+- debug: var=pkg
+
+
